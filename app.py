@@ -5,6 +5,7 @@ import os
 import tempfile
 
 app = Flask(__name__)
+app.config['MAX_CONTENT_LENGTH'] = 500 * 1024 * 1024
 
 HTML_TEMPLATE = '''
 <!doctype html>
